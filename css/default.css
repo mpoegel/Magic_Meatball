@@ -1,0 +1,21 @@
+﻿body {
+	font-family: 'Sniglet', cursive;
+}
+
+#meatball_text {
+
+	margin-top: -500px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+
+#meatball_text p {
+	font-size	: 25px;
+	
+}
+
+#meat_button {
+	margin-top: 20px;
+	cursor: pointer;
+}
