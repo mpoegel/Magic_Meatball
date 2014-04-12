@@ -7,8 +7,21 @@
     <!-- Meatball references -->
     <link href="css/default.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet' type='text/css'>
-		<script src="script/default.js"></script>
-		
+		<!-- <script src="script/default.js"></script> -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var key = '8EG835-PWAPUX262A';
+				var url = 'http://api.wolframalpha.com/v2/query?appid=';
+				var req = '&input=pi&format=image,plaintext';
+				var query = url+key+req;
+				console.log(query);
+				$.get(query,function(data){
+					// alert("Data: " + data + "\nStatus: " + status);
+					console.log('hi');	
+				});
+			});
+		</script>
 		
 </head>
 <body background='images/pasta.png'>
